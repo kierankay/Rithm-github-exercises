@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        #clock-body {
+            width: 500px;
+            height: 500px;
+            border-radius: 500px;
+            border: 5px solid black;
+            position: relative;
+        }
+        #hour-hand {
+            width: 220px;
+            height: 5px;
+            background-color: black;
+            animation-name: hours;
+            animation-duration: 216000s;
+            margin: 248px 248px;
+        }
+        #minute-hand {
+            width: 240px;
+            height: 3px;
+            background-color: black;
+            animation-name: minutes;
+            animation-duration: 3600s;
+            margin-top: -1px;
+            margin: 249px 249px;
+        }
+        #second-hand {
+            width: 240px;
+            height: 1px;
+            background-color: black;
+            animation-name: seconds;
+            animation-duration: 60s;
+            margin-top: -21px;
+            margin: 250px 250px;
+        }
+        #hour-hand, 
+        #minute-hand, 
+        #second-hand {
+            animation-iteration-count: infinite;
+            transform-origin: top left;
+            position: absolute;
+            animation-timing-function: linear;
+        }
+        @keyframes hours {
+            0% {
+                transform: rotate(-90deg);
+            }
+            100% {
+                transform: rotate(270deg);
+            }
+        }
+        @keyframes minutes {
+            0% {
+                transform: rotate(-90deg);
+            }
+            100% {
+                transform: rotate(270deg);
+            }
+        }
+        @keyframes seconds {
+            0% {
+                transform: rotate(-90deg);
+            }
+            100% {
+                transform: rotate(270deg);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div id="clock-body">
+        <div id="hour-hand"></div>
+        <div id="minute-hand"></div>
+        <div id="second-hand"></div>
+    </div>
+</body>
+</html>
