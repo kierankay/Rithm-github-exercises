@@ -1,0 +1,44 @@
+.memediv {
+    position: relative;
+    height: 100%;
+}
+
+.memeimage {
+    width: 100%;
+}
+
+.uppertext,
+.lowertext {
+    position: absolute;
+    font-family: 'impact';
+    color: #fff;
+    margin: auto;
+    text-transform: uppercase;
+    font-size: 2rem;
+    text-shadow: 2px 2px #000, -2px -2px #000, -2px 2px #000, 2px -2px #000;    
+    text-align: center;
+    display: block;
+    width: 100%;
+}
+
+.uppertext {
+    top: 20px;
+}
+
+.lowertext {
+    bottom: 20px;
+}
+
+@media (min-width: 760px) {
+    .uppertext,
+    .lowertext {
+        font-size: 3rem;
+    }
+}
+
+@media (min-width: 1200px) {
+    .uppertext,
+    .lowertext {
+        font-size: 4rem;
+    }
+}
