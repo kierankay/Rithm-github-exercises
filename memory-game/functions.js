@@ -1,7 +1,7 @@
 var suits = ['<i class="fas fa-heart"></i>'];
 var unusedSuits = ['<i class="fas fa-diamond"></i>', '<i class="fas fa-club"></i>', '<i class="fas fa-spade"></i>'];
-var values = ['Q', 'K'];
-var unusedValues = ['2', '3', '4', '5', '6', '7', '8', '9', '10', 'A', 'J', ]
+var values = [ '6', '7', '8', '9', '10', 'A', 'J', 'Q', 'K'];
+var unusedValues = ['2', '3', '4', '5',]
 var cardValues = [];
 var matchedCards = [];
 var cardCount;
