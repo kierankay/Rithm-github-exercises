@@ -1,0 +1,35 @@
+.card {
+    margin: 20px;
+}
+
+.card-body {
+    padding: 30px;
+    min-height: 144px;
+    color: red
+}
+
+.card-head {
+    transition-property: all;
+    transition-delay: 0s;
+}
+
+.hide {
+    display: none;
+    transition-property: 'display';
+    transition-delay: 1s;
+}
+
+.h2 {
+    font-size: 5rem;
+}
+
+#scoretext,
+#score,
+#highscore,
+#highscoretext {
+    display: inline;
+}
+
+#scoretext {
+    margin-left: 20px;
+}
